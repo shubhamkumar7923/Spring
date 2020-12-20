@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="per" class="com.abc.Person">
+	<property name="pid" value="10"></property>
+	<property name="name" value="Shubham"></property>
+	<property name="hobbies">
+	<list>
+	<value>Playing Footall</value>
+	<value>Reading Novel</value>
+	</list>
+	</property>
+	<property name="email">
+	<list>
+	<value>shubhamkumar7923@gmail.com</value>
+	</list>
+	</property>
+	<property name="education">
+	<map>
+	<entry key="1" value="B.Tech"></entry>
+	<entry key="2" value="MBA"></entry>
+	</map>
+	</property>
+	<property name="phone">
+	<set>
+	<value>7091137745</value>
+	<value>7889981635</value>
+	</set>
+	</property>
+	<property name="percentage">
+	<props>
+	<prop key="English">92%</prop>
+	<prop key="Mathematics">75%</prop>
+	</props>
+	</property>
+	</bean>
+</beans>
